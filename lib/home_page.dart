@@ -1,4 +1,5 @@
 import 'package:designer/builder_pattern/builder_sample.dart';
+import 'package:designer/factory_pattern/shape_sample.dart';
 import 'package:designer/widgets/my_app_bar.dart';
 import 'package:designer/widgets/my_button.dart';
 import 'package:flutter/material.dart';
@@ -27,8 +28,8 @@ class HomePage extends StatelessWidget {
                 MaterialPageRoute(builder: (context) => BuilderSample()));
           }),
           myButton("Factory Pattern", () {
-            // Navigator.push(context,
-            //     MaterialPageRoute(builder: (context) => const UsersFirebase()));
+            Navigator.push(context,
+                MaterialPageRoute(builder: (context) => ShapeSample()));
           }),
           myButton("Singleton Pattern", () {
             // Navigator.push(context,
