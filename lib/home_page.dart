@@ -1,3 +1,4 @@
+import 'package:designer/builder_pattern/builder_sample.dart';
 import 'package:designer/widgets/my_app_bar.dart';
 import 'package:designer/widgets/my_button.dart';
 import 'package:flutter/material.dart';
@@ -22,8 +23,8 @@ class HomePage extends StatelessWidget {
           ),
           const SizedBox(height: 20),
           myButton("Builder Pattern", () {
-            // Navigator.push(context,
-            //     MaterialPageRoute(builder: (context) => const AddUserPage()));
+            Navigator.push(context,
+                MaterialPageRoute(builder: (context) => BuilderSample()));
           }),
           myButton("Factory Pattern", () {
             // Navigator.push(context,
