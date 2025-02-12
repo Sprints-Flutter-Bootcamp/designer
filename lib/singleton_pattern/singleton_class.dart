@@ -4,7 +4,9 @@ class Database {
   Database._internal();
 
   static Database getInstance() {
-    _instance ??= Database._internal();
+    if (_instance == null) {
+      _instance = Database._internal();
+    }
     return _instance!;
   }
 
@@ -19,6 +21,10 @@ class Client {
     Database db2 = Database.getInstance();
 
     String message = "";
+
+    // for extra clarity for myself I printed the address of both instances :)
+    print("Memory Address of db1: ${identityHashCode(db1)}");
+    print("Memory Address of db2: ${identityHashCode(db2)}");
 
     if (db1 == db2) {
       message = "Singleton works! Both instances are the same.";
