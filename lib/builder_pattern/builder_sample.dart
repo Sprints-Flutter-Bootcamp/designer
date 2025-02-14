@@ -1,4 +1,5 @@
 import 'package:designer/builder_pattern/user_class.dart';
+import 'package:designer/widgets/my_app_bar.dart';
 import 'package:designer/widgets/my_button.dart';
 import 'package:designer/widgets/my_text_field.dart';
 import 'package:flutter/material.dart';
@@ -46,7 +47,7 @@ class _BuilderSampleState extends State<BuilderSample> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("Builder Design Pattern Example")),
+      appBar: myAppBar(context, "Builder Sample"),
       body: Padding(
         padding: EdgeInsets.all(16.0),
         child: Column(

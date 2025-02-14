@@ -38,7 +38,10 @@ class UserBuilder {
   }
 
   User build() {
-    if (firstName == null || lastName == null) {
+    if (firstName == null ||
+        lastName == null ||
+        firstName == "" ||
+        lastName == "") {
       throw Exception("First name and Last name are required");
     }
     return User(this);

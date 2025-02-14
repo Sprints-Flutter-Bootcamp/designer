@@ -1,4 +1,5 @@
 import 'package:designer/factory_pattern/shape_factory.dart';
+import 'package:designer/widgets/my_app_bar.dart';
 import 'package:designer/widgets/my_button.dart';
 import 'package:flutter/material.dart';
 
@@ -26,7 +27,7 @@ class _ShapeSampleState extends State<ShapeSample> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("Factory Pattern Example")),
+      appBar: myAppBar(context, "Factory Sample"),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,

@@ -1,5 +1,3 @@
-// shape_factory.dart
-
 abstract class Shape {
   String revealMe();
 }
